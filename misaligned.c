@@ -5,10 +5,9 @@ int printColorMap()
 {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
-    int i = 0, j = 0;
-    for(i = 0; i < 5; i++) 
+    for(int i = 1; i < 5; i++) 
     {
-        for(j = 0; j < 5; j++) 
+        for(int j = 0; j < 5; j++) 
         {
             printf("%d ->Major color = %s & Minor color = %s\n", i * 5 + j, majorColor[i], minorColor[i]);
         }
