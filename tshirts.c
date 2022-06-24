@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <assert.h>
 
-char size(int shoulder_cms, int length_cms) 
+char size(int shoulder_length, int Body_length) //Length in CM
 {
     char sizeName = '\0';
     
-    if((shoulder_cms < 38)  && (length_cms <60))
+    if((shoulder_length < 38)  && (Body_length <60))
     {
         sizeName = 'S';
     } 
-    else if((shoulder_cms >= 38 && shoulder_cms < 42) && (length_cms >= 60 && length_cms < 72))
+    else if((shoulder_length >= 38 && shoulder_length < 42) && (Body_length >= 60 && Body_length < 72))
     {
         sizeName = 'M';
     } 
-    else if((shoulder_cms >= 42) && (length_cms >= 72) )
+    else if((shoulder_length >= 42) && (Body_length >= 72) )
     {
         sizeName = 'L';
     }
