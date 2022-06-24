@@ -21,7 +21,7 @@ char size(int shoulder_cms, int length_cms)
 }
 
 int main() {
-    assert(size(37,59) == 'S');
+    assert(size(37,60) == 'S');
     assert(size(40,65) == 'M');
     assert(size(43,74) == 'L');
     printf("All is well (maybe!)\n");
