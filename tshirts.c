@@ -21,8 +21,10 @@ char size(int shoulder_length, int Body_length) //Length in CM
 }
 
 int main() {
-    assert(size(37,60) == 'S');
+    assert(size(38,60) == 'S'); 
+    assert(size(37,60) == 'S'); //Tshirt size is derived based on shoulder length and body length.
     assert(size(40,65) == 'M');
+    assert(size(42,60) == 'S'); 
     assert(size(43,74) == 'L');
     printf("All is well (maybe!)\n");
     return 0;
