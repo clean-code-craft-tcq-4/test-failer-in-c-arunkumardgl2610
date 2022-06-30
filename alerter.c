@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 #inlcude "Stubfunctions.h"
-
+int networkAlertStub(float celcius);
 int alertFailureCount = 0;
-
 
 void alertInCelcius(float farenheit) {
     float celcius = (farenheit - 32) * 5 / 9;
