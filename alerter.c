@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#inlcude "Stubfunctions.h"
+#include "Stubfunctions.h"
 int networkAlertStub(float celcius);
 int alertFailureCount = 0;
 
