@@ -18,7 +18,7 @@ int printColorMap(int Get_Max_color_size )
 
 int main() 
 {
-    int result = printColorMap(6);
+    int result =printColorMap(6);
     assert(result == 25);
     printf("All is well (maybe!)\n");
     return 0;
