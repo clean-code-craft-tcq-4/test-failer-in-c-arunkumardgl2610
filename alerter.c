@@ -15,13 +15,25 @@ void alertInCelcius(float farenheit) {
         // Add a test below to catch this bug. Alter the stub above, if needed.
         alertFailureCount = alertFailureCount+1;
     }
+    else
+    {
+        if(alertFailureCount != 0)
+        {  
+            alertFailureCount = alertFailureCount;
+        }
+        else
+        {
+            alertFailureCount = 0;
+        }
+    }
+        
 }
 
 int main() {
     alertInCelcius(400.5);
     alertInCelcius(303.6);
     printf("%d alerts failed.\n", alertFailureCount);
-    assert(alertFailureCount == 0);    
+    assert(alertFailureCount == 0);    //No Error should come
     printf("All is well (maybe!)\n");
     return 0;
 }
