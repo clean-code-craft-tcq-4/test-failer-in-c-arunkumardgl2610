@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int printColorMap(unsigned int Get_Max_colour ) 
+int printColorMap(int Get_Max_colour ) 
 {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
