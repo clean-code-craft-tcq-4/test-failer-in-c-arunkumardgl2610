@@ -32,8 +32,9 @@ void alertInCelcius(float farenheit) {
 int main() {
     alertInCelcius(400.5);
     alertInCelcius(303.6);
+    alertInCelcius(250.6);
     printf("%d alerts failed.\n", alertFailureCount);
-    assert(alertFailureCount >= 3);    //No Error should come
+    assert(alertFailureCount > 2 && alertFailureCount <=4);    //No Error should come
     printf("All is well (maybe!)\n");
     return 0;
 }
